@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px repeat(5, 1fr);
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  height: 100vh;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+.item20 {
+  grid-column: 3 / span 2;
+  grid-row: 6;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+}
