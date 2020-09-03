@@ -11,36 +11,41 @@
   <body>
     <div class="grid-container">
       <!-- Display -->
-      <div class="grid-item item1">0</div>
+      <div class="grid-item item1">
+        <span class="sum"></span>
+        <span class="result"></span>
+      </div>
 
       <!-- C +/- ÷ -->
-      <div class="grid-item item2"><button>C</button></div>
-      <div class="grid-item item3"><button>AC</button></div>
-      <div class="grid-item item4"><button>+/-</button></div>
-      <div class="grid-item item5"><button>÷</button></div>
+      <div class="grid-item item2"><button data-value="clear">C</button></div>
+      <div class="grid-item item3"><button data-value="clear-all">AC</button></div>
+      <div class="grid-item item4"><button data-value="plus-minus">+/-</button></div>
+      <div class="grid-item item5"><button data-value="operator">÷</button></div>
 
       <!-- 7 8 9 x -->
-      <div class="grid-item item6"><button>7</button></div>
-      <div class="grid-item item7"><button>8</button></div>
-      <div class="grid-item item8"><button>9</button></div>
-      <div class="grid-item item9"><button>x</button></div>
+      <div class="grid-item item6"><button data-value="operand">7</button></div>
+      <div class="grid-item item7"><button data-value="operand">8</button></div>
+      <div class="grid-item item8"><button data-value="operand">9</button></div>
+      <div class="grid-item item9"><button data-value="operator">x</button></div>
 
       <!-- 4 5 6 - -->
-      <div class="grid-item item10"><button>4</button></div>
-      <div class="grid-item item11"><button>5</button></div>
-      <div class="grid-item item12"><button>6</button></div>
-      <div class="grid-item item13"><button>-</button></div>
+      <div class="grid-item item10"><button data-value="operand">4</button></div>
+      <div class="grid-item item11"><button data-value="operand">5</button></div>
+      <div class="grid-item item12"><button data-value="operand">6</button></div>
+      <div class="grid-item item13"><button data-value="operator">-</button></div>
 
       <!-- 1 2 3 + -->
-      <div class="grid-item item14"><button>1</button></div>
-      <div class="grid-item item15"><button>2</button></div>
-      <div class="grid-item item16"><button>3</button></div>
-      <div class="grid-item item17"><button>+</button></div>
+      <div class="grid-item item14"><button data-value="operand">1</button></div>
+      <div class="grid-item item15"><button data-value="operand">2</button></div>
+      <div class="grid-item item16"><button data-value="operand">3</button></div>
+      <div class="grid-item item17"><button data-value="operator">+</button></div>
 
       <!-- 0 . = -->
-      <div class="grid-item item18"><button>0</button></div>
-      <div class="grid-item item19"><button>.</button></div>
-      <div class="grid-item item20"><button>=</button></div>
+      <div class="grid-item item18"><button data-value="operand">0</button></div>
+      <div class="grid-item item19"><button data-value="decimal-point">.</button></div>
+      <div class="grid-item item20"><button data-value="equals">=</button></div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
