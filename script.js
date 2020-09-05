@@ -14,7 +14,7 @@ const buttons = document.querySelectorAll('button');
 function computeNewValue(firstOperand, secondOperand, operator) {
   if (operator === '+') return firstOperand + secondOperand;
   if (operator === '-') return firstOperand - secondOperand;
-  if (operator === 'x') return firstOperand * secondOperand;
+  if (operator === '×') return firstOperand * secondOperand;
   if (operator === '÷') return firstOperand / secondOperand;
 
   // Calculator.operator is set to '' after pressing equals
@@ -74,7 +74,7 @@ function handleOperator(operator) {
 
 buttons.forEach((button) => {
   button.addEventListener('click', function handleButtonPress() {
-    const buttonType = this.getAttribute('data-value');
+    const buttonType = this.value;
     const input = this.textContent;
 
     switch (buttonType) {
