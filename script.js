@@ -78,6 +78,12 @@ buttons.forEach((button) => {
     const input = this.textContent;
 
     switch (buttonType) {
+      case 'clear-all':
+        calculator.displayValue = '0';
+        calculator.firstOperand = null;
+        calculator.operator = '';
+        calculator.awaitingSecondOperand = false;
+        break;
       case 'equals':
         handleEquals();
         break;
